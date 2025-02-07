@@ -1,0 +1,150 @@
+body {
+    background-color: white;
+}
+/* .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+}
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links li {
+    list-style-type: none;
+}
+
+.navbar-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+.resortName {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    letter-spacing: 0.3rem;
+    font-family: "Allerta Stencil", sans-serif;
+    flex-grow: 1;
+} */
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 1.3rem;
+}
+.allrooms {
+    display: flex;
+    letter-spacing: 0.3rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin-bottom: 1.4rem;
+    margin-top: 1.4rem;
+}
+.allrooms a {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.allrooms h1 {
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+thead th {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(51, 15, 252, 0.89);
+    color: #ffffff;
+}
+tr {
+    border: none;
+    background-color: rgb(246, 243, 243);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.action-button {
+    display: flex;
+    justify-content: center;
+}
+.action-button button,
+.action-button input[type="submit"] {
+    border-radius: 3px;
+    padding: 5px 10px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.action-button .openModalButton {
+    background-color: rgb(255, 169, 11);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.action-button button:hover {
+    background-color: rgb(192, 106, 0);
+}
+
+.action-button input[type="submit"] {
+    background-color: rgb(254, 21, 21);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.action-button input[type="submit"]:hover {
+    background-color: darkred;
+}
+
+#image {
+    display: none;
+}
+
+tr:hover:not(:has(th)) {
+    background-color: #dadada;
+}
+
+.hidden {
+    display: none;
+}
+
+.allrooms {
+    text-align: center;
+    font-size: 25px;
+}
+
+#roomeditmodal {
+    width: 500px;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+#roomeditmodal::backdrop {
+    background-color: rgba(56, 56, 56, 0.7);
+    backdrop-filter: blur(2px);
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

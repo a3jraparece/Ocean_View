@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 600px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+}
+
+thead tr {
+    background-color: #3264FE;
+    color: white;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px 15px;
+}
+
+tbody tr {
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3f3;
+    color: #3264FE;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #3264FE;
+    border-top: 2px solid #3264FE;
+}

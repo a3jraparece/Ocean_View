@@ -1,0 +1,84 @@
+    {{-- 
+    @foreach ($rooms as $room)
+        {{-- @if ($room['status'] != 0) --}}
+    {{-- @if (true)
+            Room Id: {{ $room['roomID'] }}
+            Room Rate:
+            @php
+                $multipliers = [
+                    'King Size Bed' => 1.2,
+                    'Queen Size Bed' => 1.15,
+                    'Suite' => 1.1,
+                    'Double Bed' => 1.05,
+                    'Single Bed' => 1.0,
+                ];
+                $multiplier = $multipliers[$room['room_type']] ?? 1.0;
+            @endphp
+            ₱<span>{{ number_format($room_rate * $multiplier, 2) }}</span>
+            Resort Id: {{ $room['resortID'] }}
+            Room Type:{{ $room['room_type'] }}
+            Room image:{{ $room['room_image'] }}
+            description: {{ $room['description'] }}
+            inclusions:{{ $room['inclusions'] }}
+            capacity:{{ $room['capacity'] }}
+            amenities:{{ $room['amenities'] }}
+            <button type="button"
+                style="background-color: rgb(42, 42, 252); border: none; border-radius:5px; color:white; padding:1.5px 7px"
+                class="openRoomInfoButton" data-room="{{ json_encode($room) }}"
+                data-room_rate="{{ json_encode($room_rate) }}">
+                View Details
+            </button>
+            <button type="button" class="openRoomBookNowButton" data-room="{{ json_encode($room) }}"
+                data-room_rate="{{ json_encode($room_rate) }}" data-user="{{ session('user') }}"
+                data-loginURL = "{{ route('login.user') }}">
+                Book Now
+            </button> --}}
+    {{-- @endif
+    <br>
+    <br>
+    @endforeach --}}
+
+
+      <!-- Booking Details -->
+    {{-- <div class="details-section">
+        <h5>Booking Details</h5>
+        <div class="row">
+            <div class="col-6">
+                <strong>Check-in:</strong>
+            </div>
+            <div class="col-6 text-end" id="veryFinalBookingCheckIn">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <strong>Check-out:</strong>
+            </div>
+            <div class="col-6 text-end" id="veryFinalBookingCheckOut">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <strong>Covered:</strong>
+            </div>
+            <div class="col-6 text-end" id="veryFinalBookingCovered">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <strong>Total:</strong>
+            </div>
+            <div class="col-6 text-end text-primary fw-bold" id="veryFinalBookingTotal">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <strong>Payment:</strong>
+            </div>
+            <div class="col-6 text-end" id="veryFinalPaymentStat">
+                Full Payment
+            </div>
+        </div>
+    </div> --}}

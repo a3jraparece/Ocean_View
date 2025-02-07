@@ -1,0 +1,47 @@
+.upload-box {
+    border: 1px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    height: 150px;
+}
+
+.upload-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.admin-section {
+    text-align: right;
+    font-weight: bold;
+}
+
+.btn-upload {
+    margin-top: 10px;
+}
+
+.justify-content-between {
+    background-color: rgb(190, 188, 188);
+    padding: 5px;
+}
+
+.upload-box.main-image {
+    height: 280px;
+}
+
+.upload-box.side-image {
+    height: 230px;
+}
+
+
+.inputs {
+    display: none;
+}
+
+.ameneties {
+    width: 70px;
+}
+
+.picg1 {
+    height: 500px;
+}

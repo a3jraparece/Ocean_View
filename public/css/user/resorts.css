@@ -1,0 +1,188 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.card-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#carouselExampleIndicators .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-holder {
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    /* background: #000; */
+    bottom: 0;
+    left: 0;
+    font-family: Calistoga, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    z-index: 10;
+    pointer-events: none;
+}
+.carousel-caption span {
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+.hrkuno {
+    border-bottom: 2px solid white;
+    width: 55%;
+}
+.carousel-item .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0) 13%
+        ),
+        linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 13%);
+    pointer-events: none; /* Ensures the gradient doesn't block any interactions */
+    z-index: 1;
+}
+.description {
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+}
+.description p,
+.description h2 {
+    font-family: Calistoga, sans-serif;
+    color: white;
+}
+
+.hrkunocarousel {
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+
+.card-title {
+    font-family: Calistoga, sans-serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+    border-bottom: 2px solid white;
+    width: 70%;
+}
+
+.card-text {
+    font-family: Calistoga, sans-serif;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+.visitnow-card-button {
+    font-family: Calistoga, sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+}
+.carousel-content {
+    display: block;
+}
+
+@media screen and (max-width: 575px) {
+    .yeah {
+        width: 100%;
+    }
+}
+
+/* @media (max-width: 990px) {
+    .carousel-caption {
+        top: 70%;
+        left: 40%;
+    }
+    .carousel-caption h3 {
+        letter-spacing: 1px;
+        font-size: 28px;
+    }
+    .carousel-caption p {
+        font-size: 18px;
+    }
+    .hrkuno {
+        width: 80%;
+    }
+    .card-title {
+        font-family: Calistoga, sans-serif;
+        letter-spacing: 2px;
+        font-size: 20px;
+        border-bottom: 2px solid white;
+        width: 70%;
+    }
+    .card-text {
+        font-family: Calistoga, sans-serif;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+    .visitnow-card-button {
+        font-family: Calistoga, sans-serif;
+        letter-spacing: 2px;
+        font-size: 12px;
+        border: none;
+        border-radius: 20px;
+    }
+}
+@media (max-width: 768px) {
+    #carouselExampleCaptions {
+        height: 30vh; /* Reduce height on smaller screens *
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        font-size: 0.4rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: 32%;
+    }
+    .carousel-control-prev {
+        left: 1%;
+    }
+    .carousel-control-next {
+        right: 1%;
+    }
+    .carousel-content h2 {
+        font-size: 23px;
+    }
+    .description h2 {
+        font-family: Calistoga, sans-serif;
+        font-size: 20px;
+        color: white;
+        z-index: 10;
+    }
+    .description p {
+        font-size: 8px;
+        font-family: Calistoga, sans-serif;
+        color: white;
+    }
+}
+
+@media (max-width: 556px) {
+    #carouselExampleIndicators {
+        height: 25vh; /* Further reduce height on very small screens *
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        font-size: 0.4rem;
+        top: 22%;
+    }
+    .carousel-content h2 {
+        font-size: 15px;
+    }
+    .carousel-content {
+        display: none;
+    }
+} */

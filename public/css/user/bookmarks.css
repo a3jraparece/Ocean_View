@@ -1,0 +1,44 @@
+.bookmarks {
+    padding: 1.9rem;
+}
+
+.bookmark {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bookmark-image {
+    width: 100px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.bookmark-info {
+    flex-grow: 1;
+}
+.bookmark-info h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.bookmark-info p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #666;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn img {
+    width: 40px;
+    height: 40px;
+}

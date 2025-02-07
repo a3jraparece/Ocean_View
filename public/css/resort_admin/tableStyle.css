@@ -1,0 +1,131 @@
+body {
+    overflow-y: scroll;
+}
+
+#reservationTable th {
+    position: relative;
+    /* Important for tooltip positioning */
+}
+
+#reservationTable td {
+    border: 1px solid #a0a0a0;
+    min-width: 50px;
+    max-width: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 3px 6px;
+    position: relative;
+}
+
+#reservationTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tooltip {
+    border: 1px solid rgb(210, 210, 210);
+    width: 330px;
+    text-wrap: wrap;
+    position: fixed;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    background-color: rgba(236, 236, 236, 0.4);
+    backdrop-filter: blur(5px);
+    color: #000000;
+    border-radius: 5px;
+    font-size: 14px;
+    /* pointer-events: none; */
+    z-index: 10001;
+}
+
+.hidden {
+    display: none;
+}
+
+#tooltipHeading {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(50, 100, 254);
+}
+
+#tooltipDeleteIcon {
+    width: 20px;
+    z-index: 10;
+}
+
+#tooltipBody {
+    padding: 10px;
+}
+
+#tooltipIMGHolder {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#tooltipResortTitle {
+    text-align: center;
+}
+
+#tooltipResortNameHodler {
+    position: relative;
+    margin-top: 5px;
+}
+
+#tooltipResortNameHodler span {
+    font-size: 22px;
+}
+
+
+#tooltipIMGHolder img {
+    width: 100%;
+    object-fit: cover;
+    min-height: 100%;
+}
+
+#tooltipTable {
+    width: 100%;
+    padding: 10px;
+}
+
+#tooltipTable tr td:nth-child(1) {
+    text-align: left;
+}
+
+#tooltipTable tr td:nth-child(2) {
+    text-align: right;
+    font-weight: bold;
+}
+
+.tooltipRadioButton {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+.tooltipRadioButton input[type="radio"] {
+    margin-right: 7px;
+    z-index: 10;
+}
+
+#tooltipTotalHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tooltipTotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
