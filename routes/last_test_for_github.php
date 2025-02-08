@@ -1,1 +1,0 @@
-unta mo gana naka ma looi ka.
