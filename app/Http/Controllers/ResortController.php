@@ -138,7 +138,7 @@ class ResortController extends Controller
             'room_description' => 'nullable',
         ]);
 
-        $data['amenities'] = implode(' | ', $request['amenities']);
+        $data['amenities'] = is_array($request['amenities']) ? implode(' | ', $request['amenities']) : '';
 
         move_image($request, $resort, $data, 'mainImage');
         move_image($request, $resort, $data, 'image1');

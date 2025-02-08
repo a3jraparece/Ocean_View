@@ -58,7 +58,8 @@
                 <thead>
                     <tr>
                         <th style=" border-top-left-radius: 7px;">
-                            Resort ID</th>
+                            Resort
+                        </th>
                         <th>Resort Name</th>
                         <th>Username</th>
                         <th>Password</th>
@@ -68,7 +69,9 @@
                         <th>Tax Rate</th>
                         <th>Room Rate</th>
                         <th>Status</th>
-                        <th colspan="2" style=" border-top-right-radius: 7px;">Actions</th>
+                        <th colspan="2" style=" border-top-right-radius: 7px;">
+                            Actions
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -97,7 +100,7 @@
                                     @csrf
                                     @method('delete')
                                     <input type="submit" class="btn btn-danger" value="Delete">
-                                </form> 
+                                </form>
                             </td>
                         </tr>
                     @endforeach
@@ -276,36 +279,36 @@
     </div>
 
     <div class="row-css mt-5">
-        @foreach($resorts as $resort)
-        <div class="card-css">
-            <div class="card-header bg-primary">
-                <p class="card-title text-white">{{ $resort['resort_name'] }}</p>
-                <div class="actions">
-                    <span class="edit bg-warning">Edit</span>
-                    <span class="delete">Delete</span>
+        @foreach ($resorts as $resort)
+            <div class="card-css">
+                <div class="card-header bg-primary">
+                    <p class="card-title text-white">{{ $resort['resort_name'] }}</p>
+                    <div class="actions">
+                        <span class="edit bg-warning">Edit</span>
+                        <span class="delete">Delete</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="contact-info">
+                        <p class="phone">{{ $resort['username'] }}</p>
+                        <p class="status text-white"
+                            style="background-color: {{ $resort['status'] == 0 ? '#f44336   ' : 'rgb(1, 193, 42)' }};letter-spacing:2px; border-radius:10px;">
+                            {{ $resort['status'] == 0 ? 'Deactived' : 'Active' }}</p>
+                    </div>
+                    <div class="additional-info">
+                        <p class="email">{{ $resort['location'] }}</p>
+                        <p class="price">{{ $resort['taxRate'] }}%</p>
+                    </div>
+                    <div class="additional-info">
+                        <p class="email">{{ $resort['floorCount'] }} Floors</p>
+                        <p class="price">{{ $resort['roomPerFloor'] }} Rooms</p>
+                    </div>
+                    <div class="additional-info">
+                        <p class="email"></p>
+                        <p class="price">₱{{ $resort['room_rate'] }}</p>
+                    </div>
                 </div>
             </div>
-            <div class="card-body">
-                <div class="contact-info">
-                    <p class="phone">{{ $resort['username'] }}</p>
-                    <p class="status text-white"
-                        style="background-color: {{ $resort['status'] == 0 ? '#f44336   ' : 'rgb(1, 193, 42)' }};letter-spacing:2px; border-radius:10px;">
-                        {{ $resort['status'] == 0 ? 'Deactived' : 'Active' }}</p>
-                </div>
-                <div class="additional-info">
-                    <p class="email">{{ $resort['location'] }}</p>
-                    <p class="price">{{ $resort['taxRate'] }}%</p>
-                </div>
-                <div class="additional-info">
-                    <p class="email">{{ $resort['floorCount'] }} Floors</p>
-                    <p class="price">{{ $resort['roomPerFloor'] }} Rooms</p>
-                </div>
-                <div class="additional-info">
-                    <p class="email"></p>
-                    <p class="price">₱{{ $resort['room_rate'] }}</p>
-                </div>
-            </div>
-        </div>
         @endforeach
     </div>
 
